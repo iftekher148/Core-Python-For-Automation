@@ -49,11 +49,31 @@
 # print(a,b,c)
 
 """Python Local Variables: Python Local Variables are defined inside a function. We can not access variable outside the function."""
-def sum(x,y):
-    sum=x+y
-    return sum
-sum(20,30)
-print(sum())
+# def sum(x=10, y=20):  # Set default values for x and y
+#     result = x + y
+#     return result
+# print(sum())  # No arguments are passed; default values are used
+
+# def sum(x,y):
+#     sum =x+y
+#     return sum
+# print(sum(10,40))
+
+"""Python Global Variables: Any variable created outside a function can be accessed within any function and so they have global scope."""
+# x,y=30,40
+# def sum():
+#     result = x+y
+#     return result
+# print(sum())
+
+"""Python's identity operator 'is' returns True if both the operands have same id() value."""
+a=b=10
+c= a is b
+print(c)
+print(a is b)
+print(id(a))
+print(id(b))
+
 
 
 
